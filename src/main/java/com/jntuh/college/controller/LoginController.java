@@ -16,6 +16,7 @@ public class LoginController {
 	@PostMapping("/validate")
 	@CrossOrigin
 	public boolean validateUserCredentials(@RequestBody String req) {
+		
 		boolean validated = false;
 		JSONObject jsonObject = new JSONObject(req);
 		String uername = jsonObject.get("username").toString();
