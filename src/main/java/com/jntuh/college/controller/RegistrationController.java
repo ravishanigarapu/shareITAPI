@@ -1,11 +1,10 @@
 package com.jntuh.college.controller;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.json.JSONObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,29 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jntuh.college.dto.Student;
 
 @RestController
-@RequestMapping("/validate")
-public class LoginController {
+@RequestMapping("/student")
+public class RegistrationController {
 	private List<Student> students = new ArrayList<>();
-	@PostMapping("/login")
-	@CrossOrigin
-	public boolean validateUserCredentials(@RequestBody String req) {
-		
-		boolean validated = false;
-		JSONObject jsonObject = new JSONObject(req);
-		String username = jsonObject.get("username").toString();
-		System.out.println("---------------Entered--------------"+ req);
-		for (Student student : students) {
-			if(student.getFirstName().equalsIgnoreCase(username)) {
-				validated = true;
-			}
-		}
-		
-		return validated;
-	}
-	
-	
 	@PostMapping("/save")
-	@CrossOrigin
 	public ResponseEntity<?> saveStudent(@RequestBody Student student) {
 
 		try {
