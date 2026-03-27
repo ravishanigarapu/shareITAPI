@@ -1,39 +1,42 @@
-package com.jntuh.college.dto;
-
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+package com.common.share.dto;
 
 public class Student {
 	private String firstName;
-	private String latName;
-	private String email;
-	private String phoneNo;
+	private String lastName;
+	private String mailID;
+	private String gender;
+	private String phoneNumber;
 	private String dob;
-	private String newPassword;
+	private String password;
 	public String getFirstName() {
 		return firstName;
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	public String getLatName() {
-		return latName;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLatName(String latName) {
-		this.latName = latName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-	public String getEmail() {
-		return email;
+	public String getMailID() {
+		return mailID;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setMailID(String mailID) {
+		this.mailID = mailID;
 	}
-	public String getPhoneNo() {
-		return phoneNo;
+	public String getGender() {
+		return gender;
 	}
-	public void setPhoneNo(String phoneNo) {
-		this.phoneNo = phoneNo;
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	public String getDob() {
 		return dob;
@@ -41,11 +44,11 @@ public class Student {
 	public void setDob(String dob) {
 		this.dob = dob;
 	}
-	public String getNewPassword() {
-		return newPassword;
+	public String getPassword() {
+		return password;
 	}
-	public void setNewPassword(String newPassword) {
-		this.newPassword = newPassword;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	

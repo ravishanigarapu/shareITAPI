@@ -1,13 +1,13 @@
-package com.jntuh.college;
+package com.common.share;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CollegeApplication {
+public class ShareITAPIApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CollegeApplication.class, args);
+		SpringApplication.run(ShareITAPIApplication.class, args);
 	}
 
 }

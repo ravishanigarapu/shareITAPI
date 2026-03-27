@@ -1,10 +1,10 @@
-package com.jntuh.college;
+package com.common.share;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CollegeApplicationTests {
+class ShareITAPIApplicationTests {
 
 	@Test
 	void contextLoads() {
