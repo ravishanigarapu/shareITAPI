@@ -1,4 +1,4 @@
-package com.jntuh.college.controller;
+package com.common.share.controller;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jntuh.college.dto.Student;
+import com.common.share.dto.Student;
 
 @RestController
 @RequestMapping("/validate")
